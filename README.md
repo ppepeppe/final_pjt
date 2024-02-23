@@ -22,8 +22,10 @@
 ## 이벤트 스토밍
 ![Alt text](./img/event_storming.png)
 
+# 개발
+--------------------------------------------------------------------------------------
 
-## 분산트랜잭션 - saga
+### 분산트랜잭션 - saga
 
 - 초기 재고량 설정
 
@@ -39,7 +41,7 @@
 
 ![Alt text](./img/image-3.png)
 
-## 보상처리
+### 보상처리
 - 주문취소 kafka 확인
 
 ![Alt text](./img/image-4.png)
@@ -47,23 +49,25 @@
 - 재고 변화 확인
 
 ![Alt text](./img/image-5.png)
-## 단일진입점
+### 단일진입점
 
 - apigateway 확인
 
 ![Alt text](./img/image-7.png)
 
-## 클라우드 배포 - conatiner 운영
+# 운영
+---------------------------------------------------------------------------------------
+### 클라우드 배포 - conatiner 운영
 - 패키지 된 jar 파일을 기반으로 한 이미지 빌드
 - 빌드 된 이미지를 docker hub repo에 push
 - 이미지를 활용하여 실행
 
-## hpa
+### hpa
 ![Alt text](./img/image-8.png)
 
 ![Alt text](./img/image-9.png)
 
-## configMap
+### configMap
 ```
 kubectl apply -f - <<EOF
 apiVersion: v1
@@ -83,7 +87,7 @@ EOF
 
 작성된 ConfigMap 의 db 정보와 동일한 것을 알 수 있다.
 
-## 무정지 배포
+### 무정지 배포
 
 ![Alt text](./img/image-10.png)
 
@@ -107,10 +111,10 @@ readinessProbe:    # 이부분!
 availability 100% 로 보아 50 % 모두 가동한 것을 알 수 있음
 
 
-## PVC
+### PVC
 ![Alt text](./img/image-12.png)
 
-## 서비스mesh
+### 서비스mesh
 ![Alt text](./img/동적1.png)
 
 ![Alt text](./img/동적2.png)
