@@ -104,6 +104,7 @@ EOF
 ### 무정지 배포
 
 - 클러스터에 배포를 할때 readinessProbe 설정이 없으면 다운타임이 존재 하게 된다. 
+
 ![Alt text](./img/image-10.png)
 
 availability 50% 로 보아 50 %의 중단이 있었음
