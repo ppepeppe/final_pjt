@@ -31,9 +31,11 @@
 ![Alt text](./img/image.png)
 
 - 주문
+
 ![Alt text](./img/image-6.png)
 
 - kafka 확인
+
 ![Alt text](./img/image-2.png)
 
 - 재고변화 확인
@@ -41,6 +43,7 @@
 ![Alt text](./img/image-3.png)
 
 ### 보상처리
+
 - 주문취소 kafka 확인
 
 ![Alt text](./img/image-4.png)
@@ -48,6 +51,7 @@
 - 재고 변화 확인
 
 ![Alt text](./img/image-5.png)
+
 ### 단일진입점
 
 - apigateway 확인
@@ -57,11 +61,13 @@
 # 운영
 ---------------------------------------------------------------------------------------
 ### 클라우드 배포 - conatiner 운영
+
 - 패키지 된 jar 파일을 기반으로 한 이미지 빌드
 - 빌드 된 이미지를 docker hub repo에 push
 - 이미지를 활용하여 실행
 
 ### hpa
+
 - Pod 를 Kubernetes에서 수평적으로 확장하는 방법인 hpa 입니다.
 
 ![Alt text](./img/image-8.png)
@@ -69,6 +75,7 @@
 ![Alt text](./img/image-9.png)
 
 ### configMap
+
 - 컨피그맵(Configmap)은 쿠버네티스가 컨테이너에서 필요한 환경설정 내용을 컨테이너와 분리해 저장하고 제공해 주기 위해 사용한다.
 
 ```
@@ -91,9 +98,11 @@ EOF
 작성된 ConfigMap 의 db 정보와 동일한 것을 알 수 있다.
 
 ### PVC
+
 ![Alt text](./img/image-12.png)
 
 ### 무정지 배포
+
 - 클러스터에 배포를 할때 readinessProbe 설정이 없으면 다운타임이 존재 하게 된다. 
 ![Alt text](./img/image-10.png)
 
@@ -118,6 +127,7 @@ availability 100% 로 보아 50 % 모두 가동한 것을 알 수 있음
 
 
 ### 서비스mesh
+
 ![Alt text](./img/동적1.png)
 
 ![Alt text](./img/동적2.png)
