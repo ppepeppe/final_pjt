@@ -131,3 +131,13 @@ availability 100% 로 보아 50 % 모두 가동한 것을 알 수 있음
 ![Alt text](./img/동적1.png)
 
 ![Alt text](./img/동적2.png)
+
+## monitoring
+
+- 다음과 같이 siege 를 발생시키면
+
+![Alt text](./img/monitor.png)
+
+- 아래와 같이 Network IO, CPU, Memory 사용량이 실시간 증가한다
+
+![Alt text](./img/부하.png)
